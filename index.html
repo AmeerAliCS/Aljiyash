@@ -146,13 +146,14 @@
         center: location,
     });
 
-    // إضافة العلامة (Marker) باستخدام AdvancedMarkerElement
-    const marker = new google.maps.marker.AdvancedMarkerElement({
-        map: map,
+    // إضافة العلامة (Marker) باستخدام الطريقة التقليدية
+    const marker = new google.maps.Marker({
         position: location,
-        title: "موقع الشركة", // نص يظهر عند تمرير الفأرة على العلامة
+        map: map,
+        title: "موقع الشركة" // نص يظهر عند تمرير الفأرة على العلامة
     });
 }
+
 
     </script>
 </body>
